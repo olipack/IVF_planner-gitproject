@@ -1,5 +1,5 @@
 """
-WSGI config for ivf_planner project.
+WSGI config for myfertplan project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ivf_planner.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myfertplan.settings')
 
 application = get_wsgi_application()

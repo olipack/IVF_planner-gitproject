@@ -1,5 +1,5 @@
 """
-ASGI config for ivf_planner project.
+ASGI config for myfertplan project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ivf_planner.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myfertplan.settings')
 
 application = get_asgi_application()
