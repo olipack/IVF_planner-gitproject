@@ -4,39 +4,318 @@
 
 {% load static %}
 
-    <!-- home
+  <!-- Create a plan
+  ================================================== -->
+  <section id="calc" class="s-home target-section" data-parallax="scroll" data-image-src="{% static 'images/bg-calc.jpg' %}" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+    <div class="overlay"></div>
+    <div class="shadow-overlay"></div>
+
+    <div class="home-content">
+
+      <div class="row home-content__main">
+          
+        <h3>Create a plan</h3>
+        
+        <div class="home-content__buttons">
+          <a href="#preparation" class="smoothscroll btn btn--stroke">Endometrial preparation</a><br>
+          <a href="#stimulation" class="smoothscroll btn btn--stroke">Ovarian stimulation</a><br>
+          <a href="#custom" class="smoothscroll btn btn--stroke">Custom plan</a><br>
+        </div>
+        
+        <div class="home-content__buttons">
+          <a href="{% url 'home' %}" class="mb-5 btn btn--stroke">Back</a>
+        </div>
+
+      </div>
+
+      <div class="home-content__scroll">
+        <a href="#about" class="scroll-link smoothscroll">
+          <span>Scroll Down</span>
+        </a>
+      </div>
+      
+      <div class="home-content__line"></div>
+      
+    </div> <!-- end home-content -->
+  </section> 
+  
+  <!-- Endometrial preparation
     ================================================== -->
-    <!-- <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="{% static 'images/bg-home.jpg' %}" data-natural-width=3000 data-natural-height=2000 data-position-y=center> -->
-      <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="{% static 'images/bg-home.jpg' %}" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+  <section id='preparation' class="s-services">
 
-        <div class="overlay"></div>
-        <div class="shadow-overlay"></div>
+    <div class="row section-header has-bottom-sep" data-aos="fade-up">
+        <div class="col-full">
+          <h3 class="subhead">Endometrial preparation</h3>
+          <h1 class="display-2">Hormone replacement for biopsies and transfers</h1>
+        </div>
+    </div> <!-- end section-header -->
 
-        <div class="home-content">
+    <div class="row services-list block-1-2 block-tab-full">
+      
+        <div class="col-block service-item" data-aos="fade-up">
+          <div class="service-icon">
+              <i class="icon-paint-brush"></i>
+          </div>
+          <div class="service-text">
+            <h3 class="h2">Mock cycle</h3>
+            <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+            Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+            Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
+          </div>
+        </div>
 
-            <div class="row home-content__main">
+        <div class="col-block service-item" data-aos="fade-up">
+          <div class="service-icon">
+                <i class="icon-group"></i>
+              </div>
+            <div class="service-text">
+                <h3 class="h2">Illustration</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                  Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                </p>
+              </div>
+        </div>
 
-                <h1>Create a plan</h1>
-
-                <div class="home-content__buttons">
-                  <a href="{% url 'home' %}" class="btn btn--stroke">Ovarian stimulation</a><br>
-                  <a href="{% url 'home' %}" class="btn btn--stroke">Endometrial preparation</a><br>
-                  <br>
-                  <a href="{% url 'home' %}" class="btn btn--stroke">Back</a>
-                </div>
-
+        <div class="col-block service-item" data-aos="fade-up">
+            <div class="service-icon">
+              <i class="icon-megaphone"></i>
+            </div>  
+            <div class="service-text">
+              <h3 class="h2">Marketing</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                  Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+              </p>
             </div>
-
-            <div class="home-content__scroll">
-                <a href="#about" class="scroll-link smoothscroll">
-                    <span>Scroll Down</span>
-                </a>
+        </div>
+        
+        <div class="col-block service-item" data-aos="fade-up">
+            <div class="service-icon">
+              <i class="icon-earth"></i>
             </div>
+            <div class="service-text">
+              <h3 class="h2">Web Design</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                  Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+              </p>
+            </div>
+        </div>
+        
+        <div class="col-block service-item" data-aos="fade-up">
+          <div class="service-icon">
+                <i class="icon-cube"></i>
+              </div>
+            <div class="service-text">
+                <h3 class="h2">Packaging Design</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                </p>
+            </div>
+          </div>
 
-            <div class="home-content__line"></div>
+        <div class="col-block service-item" data-aos="fade-up">
+          <div class="service-icon"><i class="icon-lego-block"></i></div>
+            <div class="service-text">
+              <h3 class="h2">Web Development</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                </p>
+            </div>
+          </div>
 
-        </div> <!-- end home-content -->
-      </section> 
+    </div> <!-- end services-list -->
+    
+  </section> <!-- end s-services -->
+  
+  
+  <!-- Ovarian stimulation
+    ================================================== -->
+    <section id='stimulation' class="s-services">
+      
+      <div class="row section-header has-bottom-sep" data-aos="fade-up">
+        <div class="col-full">
+          <h3 class="subhead">Ovarian stimulation</h3>
+          <h1 class="display-2">We’ve got everything you need to launch and grow your business</h1>
+        </div>
+      </div> <!-- end section-header -->
+      
+      <div class="row services-list block-1-2 block-tab-full">
+        
+        <div class="col-block service-item" data-aos="fade-up">
+            <div class="service-icon">
+                <i class="icon-paint-brush"></i>
+            </div>
+            <div class="service-text">
+                <h3 class="h2">Brand Identity</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                </p>
+              </div>
+        </div>
 
+        <div class="col-block service-item" data-aos="fade-up">
+            <div class="service-icon">
+                <i class="icon-group"></i>
+            </div>
+            <div class="service-text">
+                <h3 class="h2">Illustration</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                  Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                </p>
+            </div>
+          </div>
 
+        <div class="col-block service-item" data-aos="fade-up">
+            <div class="service-icon">
+                <i class="icon-megaphone"></i>
+              </div>  
+            <div class="service-text">
+              <h3 class="h2">Marketing</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                </p>
+              </div>
+        </div>
+
+        <div class="col-block service-item" data-aos="fade-up">
+            <div class="service-icon">
+                <i class="icon-earth"></i>
+              </div>
+            <div class="service-text">
+                <h3 class="h2">Web Design</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-block service-item" data-aos="fade-up">
+            <div class="service-icon">
+                <i class="icon-cube"></i>
+              </div>
+            <div class="service-text">
+                <h3 class="h2">Packaging Design</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+              </p>
+            </div>
+          </div>
+
+        <div class="col-block service-item" data-aos="fade-up">
+            <div class="service-icon"><i class="icon-lego-block"></i></div>
+            <div class="service-text">
+                <h3 class="h2">Web Development</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                </p>
+            </div>
+        </div>
+        
+    </div> <!-- end services-list -->
+
+  </section> <!-- end s-services -->
+  
+  <!-- Custom
+  ================================================== -->
+  <section id='custom' class="s-services">
+
+    <div class="row section-header has-bottom-sep" data-aos="fade-up">
+        <div class="col-full">
+            <h3 class="subhead">Custom</h3>
+            <h1 class="display-2">We’ve got everything you need to launch and grow your business</h1>
+        </div>
+    </div> <!-- end section-header -->
+
+    <div class="row services-list block-1-2 block-tab-full">
+
+        <div class="col-block service-item" data-aos="fade-up">
+            <div class="service-icon">
+                <i class="icon-paint-brush"></i>
+            </div>
+            <div class="service-text">
+                <h3 class="h2">Brand Identity</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-block service-item" data-aos="fade-up">
+            <div class="service-icon">
+                <i class="icon-group"></i>
+            </div>
+            <div class="service-text">
+                <h3 class="h2">Illustration</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-block service-item" data-aos="fade-up">
+            <div class="service-icon">
+                <i class="icon-megaphone"></i>
+            </div>  
+            <div class="service-text">
+                <h3 class="h2">Marketing</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-block service-item" data-aos="fade-up">
+            <div class="service-icon">
+                <i class="icon-earth"></i>
+            </div>
+            <div class="service-text">
+                <h3 class="h2">Web Design</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-block service-item" data-aos="fade-up">
+            <div class="service-icon">
+                <i class="icon-cube"></i>
+            </div>
+            <div class="service-text">
+                <h3 class="h2">Packaging Design</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-block service-item" data-aos="fade-up">
+            <div class="service-icon"><i class="icon-lego-block"></i></div>
+            <div class="service-text">
+                <h3 class="h2">Web Development</h3>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                </p>
+            </div>
+        </div>
+
+    </div> <!-- end services-list -->
+
+  </section> <!-- end s-services -->
 {% endblock %} 
