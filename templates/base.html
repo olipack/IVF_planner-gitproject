@@ -70,7 +70,7 @@
         
                     <ul class="header-nav__social">
                         <li>
-                            <a href="{% url 'calc' %}"><i class="fa fa-facebook"></i></a>
+                            <a href="{% url 'plans' %}"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -90,7 +90,7 @@
 
             </nav>  <!-- end header-nav -->
         {% endif %} 
-        {% if '/calc' == request.path %}
+        {% if '/plans' == request.path %}
             <nav class="header-nav">
 
                 <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
@@ -99,7 +99,7 @@
                     <h3>Navigation</h3>
                     
                     <ul class="header-nav__list">
-                        <li class="current"><a class="smoothscroll"  href="#calc" title="home">Create a plan</a></li>
+                        <li class="current"><a class="smoothscroll"  href="#plans" title="home">Create a plan</a></li>
                         <li><a class="smoothscroll"  href="#preparation" title="Endometrial preparation">EM preparation</a></li>
                         <li><a class="smoothscroll"  href="#stimulation" title="Stimulation">OV stimulation</a></li>
                         <li><a class="smoothscroll"  href="#custom" title="custom">Custom plan</a></li>

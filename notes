@@ -1,0 +1,25 @@
+class ActionGroup(models.Model):
+
+    name = models.CharField(max_length=70)
+    order = models.SmallIntegerField(default=0)
+
+    class Meta:
+        ordering = ['order']
+
+    def __str__(self):
+        return self.name
+
+class Action(models.Model):
+
+    title = models.CharField(max_length=100)
+    group = models.ForeignKey(ActionGroup, related_name='group', on_delete=models.RESTRICT, null=True)
+    action1 = models.CharField(max_length=150, blank=True)
+    action2 = models.CharField(max_length=150, blank=True)
+    action3 = models.CharField(max_length=150, blank=True)
+    action4 = models.CharField(max_length=150, blank=True)
+
+    class Meta:
+        ordering = ['group']
+
+    def __str__(self):
+        return self.title
